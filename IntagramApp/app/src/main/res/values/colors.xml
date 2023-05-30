@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#455cde</color>
+    <color name="colorPrimaryDark">#403d3d</color>
+    <color name="colorAccent">#c2bdbf</color>
+    <color name="colorLack">#000000</color>
+    <color name="backgroundBottom">#3E4957</color>
+
+
+<!--    mã màu-->
+    <color name="black">#000000</color>
+    <color name="whil">#ffffff</color>
+    <color name="blue">#5680E9</color>
+    <color name="blue_green">#84CCEB</color>
+    <color name="grey">#5AB9EA</color>
+    <color name="puple">#C1C8E4</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="Gray">#808080</color>
+
+
+
+<!--    mã -->
+    <color name="GhostWhite">#F8F8FF</color>
+    <color name="WhiteSmoke">#F5F5F5</color>
+    <color name="Gainsboro">#DCDCDC</color>
+    <color name="DimGray">#696969</color>
+    <color name="Gray11">#1C1C1C</color>
+    <color name="Gray21">#363636</color>
+    <color name="Gray31">#4F4F4F</color>
+    <color name="Gray41">#696969</color>
+    <color name="Gray51">#828282</color>
+    <color name="Gray61">#9C9C9C</color>
+    <color name="Gray71">#B5B5B5</color>
+    <color name="Gray81">#CFCFCF</color>
+    <color name="DarkGray">#E8E8E8</color>
+    <color name="LightSlateGray">#A9A9A9</color>
+    <color name="SlateGray">#778899</color>
+    <color name="SlateGray1">#708090</color>
+    <color name="SlateGray2">#C6E2FF</color>
+    <color name="SlateGray3">#B9D3EE</color>
+    <color name="DarkSlateGray">#2F4F4F</color>
+    <color name="DarkSlateGray1">#97FFFF</color>
+    <color name="DarkSlateGray2">#8DEEEE</color>
+    <color name="DarkSlateGray3">#79CDCD</color>
+    <color name="DarkSlateGray4">#528B8B</color>
+
+
+    <color name="start">#00d4ff</color>
+    <color name="center">#090979</color>
+    <color name="end">#020024</color>
+
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#00a5ff</color>
+    <color name="loginBkColor">#f0f0f0</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+
+</resources>

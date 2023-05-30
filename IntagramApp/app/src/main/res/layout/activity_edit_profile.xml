@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bar"
+                    android:background="?android:attr/windowBackground">
+
+                    <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toolbar"
+                    android:background="?android:attr/windowBackground">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_close"
+                                android:id="@+id/close"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentStart="true"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:text="Edit Profile"
+                                android:layout_marginStart="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@+id/close"
+                                android:textColor="@color/colorPrimaryDark"/>
+
+
+
+
+                        </RelativeLayout>
+
+                    </androidx.appcompat.widget.Toolbar>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_gravity="center"
+                        android:id="@+id/image_profile"
+                        android:layout_margin="10dp"
+
+
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:text="Change Photo"
+                        android:id="@+id/tv_change"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+
+                    <!--        ================================== -->
+<!-- Update -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="Update Cover Media"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_update_cover_media"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="50dp"
+                            android:src="@drawable/ic_uploadclould" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="Let's upload photos and videos"
+                            android:textAlignment="center" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/btn_open_gallery"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="17dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_weight="1"
+                                android:background="@color/black"
+
+
+                                android:paddingVertical="10dp"
+                                android:text="OPEN GALLERY"
+                                android:textAlignment="center"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:background="@color/black"
+                                android:id="@+id/btn_open_camera"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="17dp"
+                                android:layout_weight="1"
+
+                                android:paddingVertical="10dp"
+                                android:text="OPEN CAMERA"
+                                android:textAlignment="center"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/cover_media"
+                            android:layout_width="330dp"
+                            android:layout_height="210dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/shapebgsearch"
+                            android:layout_marginBottom="5dp"
+                            android:padding="1dp" />
+                    </LinearLayout>
+                    <!--        =====================================-->
+                    <TextView
+                        android:layout_marginVertical="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add description"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:met_floatingLabel="normal"
+                        android:id="@+id/bio"
+                        android:padding="10dp"
+                        android:gravity="top"
+                        android:background="@drawable/shapebgsearch"
+                        android:inputType="textMultiLine"
+                        android:maxHeight="200dp"
+                        android:scrollbars="vertical"
+
+                        />
+                   <EditText
+                       android:layout_width="match_parent"
+                       android:layout_height="40dp"
+                       android:layout_marginTop="20dp"
+                       android:paddingLeft="10dp"
+                       app:met_floatingLabel="normal"
+                       android:drawableLeft="@drawable/ic_profile"
+                       android:drawablePadding="10dp"
+                       android:background="@drawable/custom_name_edit_profile"
+                       android:id="@+id/fullname"
+                       android:hint="Full Name"
+
+                     />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:drawableLeft="@drawable/ic_mail"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/custom_item_center_edit_profile"
+                        app:met_floatingLabel="normal"
+                        android:id="@+id/username"
+                        android:hint="User Name"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:drawableLeft="@drawable/ic_calendar"
+                        android:drawablePadding="10dp"
+                        android:background="@drawable/custom_item_center_edit_profile"
+                        app:met_floatingLabel="normal"
+                        android:id="@+id/birth"
+                        android:hint="Birth Day"
+
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        android:drawableLeft="@drawable/ic_sex"
+                        android:drawablePadding="10dp"
+                        app:met_floatingLabel="normal"
+                        android:background="@drawable/custom_item_center_edit_profile"
+                        android:id="@+id/gender"
+                        android:hint="Gender"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingLeft="10dp"
+                        app:met_floatingLabel="normal"
+                        android:background="@drawable/custom_occupation_edit_profile"
+                        android:id="@+id/occupation"
+                        android:hint="Occupation"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_marginTop="15dp"
+                        android:textStyle="bold"
+                        android:text="UPDATE"
+                        android:background="@drawable/custom_button_update_edit_profile"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/save"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/whil"/>
+
+
+
+
+
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

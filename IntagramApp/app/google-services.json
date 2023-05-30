@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "986889422716",
+    "project_id": "intagramsocailapp-72b22",
+    "storage_bucket": "intagramsocailapp-72b22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986889422716:android:38bde6f533a04610ce86f9",
+        "android_client_info": {
+          "package_name": "com.home.intagramapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986889422716-bnaqrh5l106mongsiva9lqr1fltsikup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Jtavd-w_I-0Twsme4w1Wsp5MUJs0Ww0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986889422716-bnaqrh5l106mongsiva9lqr1fltsikup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

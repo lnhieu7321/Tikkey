@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tikkey</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">Notifications</string>
+    <string name="login">Login</string>
+
+
+    <string name="Category_prompt">Choose Product Category</string>
+    <string-array name="category_arrays">
+        <item>Select a Category</item>
+        <item>Running Shoes</item>
+        <item>Walking Shoes</item>
+        <item>Sandals</item>
+        <item>Business Shoes</item>
+    </string-array>
+
+    <string name="currency_prompt">Choose currency</string>
+    <string-array name="currency_arrays">
+        <item>Select a Currency</item>
+        <item>USD</item>
+        <item>KRW</item>
+        <item>SGD</item>
+        <item>JPY</item>
+        <item>RMB</item>
+        <item>THB</item>
+    </string-array>
+</resources>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AccountFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="?android:attr/windowBackground">
+
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Toolbar"
+            android:background="?android:attr/windowBackground">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notification"
+                    android:src="@drawable/ic_baseline_notifications_none_24"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="Account Settings"
+            android:paddingLeft="30dp"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#D3D3D3"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <!--            profile-->
+            <RelativeLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_account_box_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconuser"
+                    android:gravity="center"
+                    android:text="Profile"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--            qr-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_qr_code_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconmail"
+                    android:gravity="center"
+                    android:text="My QR Code"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--            analytic-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_analytics_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconphone"
+                    android:gravity="center"
+                    android:text="Analytics"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--            pay-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconlocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_payment_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconlocation"
+                    android:gravity="center"
+                    android:text="Payment"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--           wallet-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconsign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_wallet_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconsign"
+                    android:gravity="center"
+                    android:text="My Wallet"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--community-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconCommunity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_wallet_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconCommunity"
+                    android:gravity="center"
+                    android:text="My Community Wallet"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+            <!--store-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+                <ImageView
+                    android:id="@+id/iconInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_store_24"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/iconInfo"
+                    android:gravity="center"
+                    android:text="Store Info"
+                    android:textSize="20dp" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#D3D3D3"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
