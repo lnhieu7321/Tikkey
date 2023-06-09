@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.home.intagramapp.Fragment.AccountFragment;
 import com.home.intagramapp.Fragment.HomeFragment;
 import com.home.intagramapp.Fragment.IndexFragment;
 import com.home.intagramapp.Fragment.NotificationFragment;
@@ -79,18 +80,24 @@ public class MainActivity extends AppCompatActivity {
                             selectedFagrament = new SearchFragment();
                             break;
                         case R.id.nav_add:
-                            selectedFagrament = null;
-                            startActivity(new Intent(MainActivity.this, PostActivity.class));
-                            break;
-                        case R.id.nav_qrcode:
-                            selectedFagrament = new QrCodeFragment();
-                            break;
-                        case R.id.nav_profile:
                             SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
                             editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
                             editor.apply();
 
                             selectedFagrament = new ProfileFragment();
+//                            selectedFagrament = null;
+//                            startActivity(new Intent(MainActivity.this, PostActivity.class));
+                            break;
+                        case R.id.nav_qrcode:
+                            selectedFagrament = new QrCodeFragment();
+                            break;
+                        case R.id.nav_profile:
+                            selectedFagrament = new AccountFragment();
+//                            SharedPreferences.Editor editor = getSharedPreferences("PREFS", MODE_PRIVATE).edit();
+//                            editor.putString("profileid", FirebaseAuth.getInstance().getCurrentUser().getUid());
+//                            editor.apply();
+//
+//                            selectedFagrament = new ProfileFragment();
                             break;
                     }
 

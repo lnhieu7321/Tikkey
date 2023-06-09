@@ -28,9 +28,7 @@ import java.util.List;
 
 import Model.User;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class SearchFragment extends Fragment {
 
 private RecyclerView recyclerView ;

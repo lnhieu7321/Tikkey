@@ -79,6 +79,7 @@ public class PostActivity extends AppCompatActivity {
                .setAspectRatio(1, 1)
                .start(PostActivity.this);
 
+
     }
 
     private String getFileExtensions(Uri uri) {
@@ -171,7 +172,9 @@ public class PostActivity extends AppCompatActivity {
             imageUrl = result.getUri();
 
             image_added.setImageURI(imageUrl);
-        }else {
+        }
+
+        else {
             Toast.makeText(PostActivity.this,"Searching gone wrong!",Toast.LENGTH_SHORT).show();
 
             startActivity(new Intent(PostActivity.this, MainActivity.class));

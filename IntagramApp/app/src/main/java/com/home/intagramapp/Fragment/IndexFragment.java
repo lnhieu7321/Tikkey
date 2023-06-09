@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,7 +33,9 @@ import com.google.firebase.database.ValueEventListener;
 import com.home.intagramapp.Adapter.MyFotosAdapter;
 import com.home.intagramapp.EditProfileActivity;
 import com.home.intagramapp.FollowersActivity;
+import com.home.intagramapp.LiveStreamActivity;
 import com.home.intagramapp.OptionsActivity;
+import com.home.intagramapp.PostActivity;
 import com.home.intagramapp.R;
 
 import java.util.ArrayList;
@@ -45,7 +48,7 @@ import Model.User;
 
 
 public class IndexFragment extends Fragment {
-    TextView posts,followers, following ,fullname,bio,username ;
+    TextView posts,followers, following ,fullname,bio,username , add_pic_video, add_product, livestream;
     ImageView image_profile,notification, cover_media;
     Button edit_profile;
     FirebaseUser firebaseUser;
@@ -180,6 +183,45 @@ public class IndexFragment extends Fragment {
             }
         });
 
+        choose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dialog dialog = new Dialog(getActivity());
+                dialog.setContentView(R.layout.dialog_custom_chose);
+
+//                --------------------------------------------
+                add_pic_video = dialog.findViewById(R.id.add_pic_video);
+                add_pic_video.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getContext(), PostActivity.class);
+                        startActivity(intent);
+                    }
+                });
+//                --------------------------------------------------
+                add_product = dialog.findViewById(R.id.add_product);
+                add_product.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Fragment fragment = new UploadProductStep1Fragment ();
+// Thay thế fragment hiện tại bằng fragment mới
+                        FragmentManager fragmentManager = getFragmentManager ();
+                        fragmentManager.beginTransaction ().replace (R.id.fragment_container, fragment).commit ();
+                        dialog.dismiss();
+                    }
+                });
+                livestream = dialog.findViewById(R.id.livestream);
+                livestream.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getContext(), LiveStreamActivity.class);
+                        startActivity(intent);
+                    }
+                });
+                dialog.show();
+            }
+        });
+
         followers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -214,13 +256,7 @@ public class IndexFragment extends Fragment {
 
             }
         });
-        choose.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), CustomChoseDialog.class);
-                startActivity(intent);
-            }
-        });
+
         return view;
     }
     private  void  addNotifications(){

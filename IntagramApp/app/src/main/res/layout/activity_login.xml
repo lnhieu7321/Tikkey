@@ -85,6 +85,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/forgot"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -135,6 +136,7 @@
             android:weightSum="10"
             android:gravity="center">
             <Button
+                android:id="@+id/google"
                 android:layout_weight="4"
                 android:drawableLeft="@drawable/google"
                 android:text="Google"
